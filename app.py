@@ -101,6 +101,6 @@ input_features = {
 }
 
 # Prediction button
-if st.button('Predict'):
+if st.button('Buat Prediksi'):
     probability = predict(input_features)
     st.markdown(f"#### Berdasarkan Model Regresi Logistik, peluang Debitur tersebut untuk Graduasi adalah: {(probability*100):.2f}%. Besar kemungkinannya, Debitur tersebut akan {'Graduasi' if probability > 0.5 else 'Tidak Graduasi'}.")
